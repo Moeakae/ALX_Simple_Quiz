@@ -31,7 +31,7 @@ function checkAnswer(){
     else {
         feedback.textContent = "this is incorrect!";
     }
-    return 4
+    return 4;
     }
     
 
