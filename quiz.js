@@ -24,7 +24,16 @@ function checkAnswer(){
     }else {
         feedback.textContent = "That's incorrect.Try again!"; // incorrect feedback
     }
+
+    if (correctAnswer ==4) {
+        feedback.textContent = "this is correct!";
     }
+    else {
+        feedback.textContent = "this is incorrect!";
+    }
+    return 4
+    }
+    
 
 
     // Add an eventlistener to the submit button (as per the check requirements)
