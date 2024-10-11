@@ -13,16 +13,16 @@ function checkAnswer(){
     // Check if an answer was seclected
     
     if (!userAnswer) {
-        feedback.textContent("Please select an answer.");
+        feedback.textContent = "Please select an answer.";
         return;
     }
     
     
 
     if (correctAnswer ===userAnswer) {
-        feedback.textContent("Correct- Well done!"); // correct feeedback
+        feedback.textContent  = "Correct- Well done!"; // correct feeedback
     }else {
-        feedback.textContent("That's incorrect.Try again!"); // incorrect feedback
+        feedback.textContent  = "That's incorrect.Try again!"; // incorrect feedback
     }
     }
 
