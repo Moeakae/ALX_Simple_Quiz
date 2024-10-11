@@ -9,16 +9,20 @@ function checkAnswer(){
     // Get the feedback element
     const feedback = document.getElementById('feedback');
  
+    
     // Check if an answer was seclected
+    
     if (!userAnswer) {
         feedback.textContent = "Please select an answer.";
         return;
     }
+    function userAnswer() {
+    var userAnswer = document.getElementById("outputval").value;
 
-    if (userAnswer.value ===correctAnswer) {
-        feedback.textContent = "Correct! Well done."; // correct feeedback
+    if (answer ===userAnswer) {
+        alert ("Correct- Well done!"); // correct feeedback
     }else {
-        feedback.textContent = "That's incorrect.Try again"; // incorrect feedback
+        alert("That's incorrect.Try again!"); // incorrect feedback
     }
     }
 
