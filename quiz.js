@@ -19,7 +19,7 @@ function checkAnswer(){
     
     
 
-    if (correctAnswer ===userAnswer) {
+    if (correctAnswer.answer ===userAnswer) {
         feedback.textContent  = "Correct- Well done!"; // correct feeedback
     }else {
         feedback.textContent  = "That's incorrect.Try again!"; // incorrect feedback
