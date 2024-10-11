@@ -13,20 +13,20 @@ function checkAnswer(){
     // Check if an answer was seclected
     
     if (!userAnswer) {
-        feedback.textContent = "Please select an answer.";
+        feedback.textContent("Please select an answer.");
         return;
     }
-    function userAnswer() {
-    var userAnswer = document.getElementById("outputval").value;
+    
+    
 
-    if (answer ===userAnswer) {
-        alert ("Correct- Well done!"); // correct feeedback
+    if (correctAnswer ===userAnswer) {
+        feedback.textContent("Correct- Well done!"); // correct feeedback
     }else {
-        alert("That's incorrect.Try again!"); // incorrect feedback
+        feedback.textContent("That's incorrect.Try again!"); // incorrect feedback
     }
     }
 
 
-// Addan eventlistener to the submit button (as per the check requirements)
-const submitbutton = document.getElementById('submit-answer');
-submitbutton.addEventListener("click", checkAnswer);
+    // Add an eventlistener to the submit button (as per the check requirements)
+    const submitbutton = document.querySelector("#submit-answer");
+    submitbutton.addEventListener("click", checkAnswer)
