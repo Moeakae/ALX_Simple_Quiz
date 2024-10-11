@@ -19,10 +19,10 @@ function checkAnswer(){
     
     
 
-    if (userAnswer.answer ===correctAnswer) {
-        feedback.textContent  = "Correct- Well done!"; // correct feeedback
+    if (userAnswer.value ===correctAnswer) {
+        feedback.textContent = "Correct- Well done!"; // correct feeedback
     }else {
-        feedback.textContent  = "That's incorrect.Try again!"; // incorrect feedback
+        feedback.textContent = "That's incorrect.Try again!"; // incorrect feedback
     }
     }
 
