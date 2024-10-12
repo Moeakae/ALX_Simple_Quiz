@@ -41,5 +41,4 @@ function checkAnswer(){
 
 
     // Add an eventlistener to the submit button (as per the check requirements)
-    const submitbutton = document.querySelector("#submit-answer");
-    submitbutton.addEventListener("click", checkAnswer)
+     document.getElementById("submit-answer").addEventListener("click", checkAnswer);
