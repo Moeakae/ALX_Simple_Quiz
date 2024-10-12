@@ -20,18 +20,22 @@ function checkAnswer(){
     
 
     if (userAnswer.value ===correctAnswer) {
-        feedback.textContent = "Correct- Well done!"; // correct feeedback
+        feedback.textContent = "Correct- Well done!"; // correct 
+        feedback.style.color ="green"; // correct
     }else {
         feedback.textContent = "That's incorrect.Try again!"; // incorrect feedback
+        feedback.style.color ="red"; // incorrect color
     }
 
-    if (correctAnswer ==4) {
+    if (userAnswer ===checkAnswer) {
         feedback.textContent = "this is correct!";
+        feedback.style.color = "pink"; // correct color
     }
     else {
-        feedback.textContent = "this is incorrect!";
+        feedback.textContent = "Please select an anwer befor submitting!";
+        feedback.style.color = "orange"; //no selection
     }
-    return 4;
+    
     }
     
 
